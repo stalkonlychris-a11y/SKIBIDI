@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SIGMA SKIBIDI</title>
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background: #ffe4ee;
+  font-family: Arial, sans-serif;
+  color: #654552;
+}
+
+.card {
+  width: 100%;
+  max-width: 360px;
+  padding: 32px 24px;
+  text-align: center;
+  background: #fffafd;
+  border: 1px solid #f6c8d8;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px #e8a9bf33;
+}
+
+.heart {
+  font-size: 28px;
+  color: #e88eae;
+}
+
+h2 {
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 14px;
+  line-height: 1.7;
+  color: #927481;
+}
+
+button {
+  margin-top: 12px;
+  padding: 13px 22px;
+  border: none;
+  border-radius: 30px;
+  background: #e88eae;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #dc789d;
+}
+
+#confession {
+  display: none;
+  margin-top: 24px;
+  padding-top: 20px;
+  border-top: 1px solid #f5d8e3;
+  text-align: left;
+  font-size: 14px;
+  line-height: 1.9;
+  white-space: pre-line;
+}
+
+.signature {
+  display: block;
+  margin-top: 16px;
+  text-align: right;
+  color: #c66f91;
+}
+</style>
+</head>
+
+<body>
+
+<div class="card">
+  <div class="heart">♡</div>
+
+  <h2>hey, you.</h2>
+
+  <p>
+    may sasabihin lang ako...<br>
+    :0 papahelp lanf sana ako
+  </p>
+
+  <button onclick="openConfession()" id="openBtn">
+    click this to open ♡
+  </button>
+
+  <div id="confession">
+HAIII HAILEY,
+I'M STARTING TO HAVE A CONFIDENCE TO SAY THIS I'M SERIOUS. 
+
+I like TALKING TO YOU, I LOVE OUR MOMENTS,
+I LOVE YOUR HUMOUR WE R SAME SIGMAAA🙏🏻🙏🏻
+
+Haileyyy, I will not think twice na there's no PERFECT TIME, rayt time lang mero’n AND TUNG RAYT TIME NAYON IS THIS. 
+
+First thing first, I'd feel HAPPY VERY HAPPY when I’m with you — everything is calm layk🥺🥺 mararamdaman ko ngiti ko OKAYIE ABOT LANGIT? SINO ANG MAY SALARIN? Hindi na me mag papa tumpik pa I WANT TO SAY MY FEELINGS NA. HAILEYY YOU GOT MY HEART HUHU🪷🎀🎀 YES I HAVE A CRUSH ON YOU ’DIKO INEXPECT TO EEYUC AKOUEE, TIME IS TICKING. Hailey, IHAVEACRUSH ONYOU DONT BASH ME PLEASE BE SIGMA TO MEE
+
+
+
+HAILEY, I Like YOUUUUUUUUUUUUUUUUUUUU
+
+
+
+
+
+    <span class="signature">
+      — CHRISTIAN ♡
+    </span>
+  </div>
+</div>
+
+<script>
+function openConfession() {
+  var message = document.getElementById("confession");
+  var button = document.getElementById("openBtn");
+
+  if (message.style.display === "block") {
+    message.style.display = "none";
+    button.innerHTML = "click this to open ♡";
+  } else {
+    message.style.display = "block";
+    button.innerHTML = "close confession ♡";
+  }
+}
+</script>
+
+</body>
+</html>
